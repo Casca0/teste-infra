@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('header.css');
+@import url('footer.css');
+
+* {
+	--highlight-color: #ff8717;
+	--text-color: #4f4f4f;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.infra-highlight {
+	color: var(--highlight-color) !important;
+	font-weight: bolder !important;
+}
+
+.infra-banner {
+	height: 64%;
+	width: 100%;
+}
+
+.infra-banner img {
+	width: 100%;
+}
+
+.infra-step-cards {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	background-color: #ebebeb;
+	cursor: default;
+}
+
+.infra-card {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.infra-card div {
+	width: 15vw;
+	text-align: center;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	color: var(--text-color);
+	font-weight: 700;
+}
+
+.infra-card figure figcaption {
+	color: var(--highlight-color);
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.infra-card-arrow {
+	object-fit: contain;
+}
+
+.infra-points-info {
+	width: 99vw;
+	margin-top: 50px;
+	display: flex;
+}
+
+.infra-points-banner {
+	background-color: var(--highlight-color);
+	width: max-content;
+	margin: 0;
+	padding: 50px;
+	padding-left: 20vw;
+	padding-right: 5vw;
+	cursor: default;
+}
+
+.infra-points-banner figcaption {
+	color: #fff;
+	font-size: 35px;
+	font-weight: 900;
+	width: 20vw;
+	text-align: left;
+}
+
+.infra-points-banner div {
+	color: #fff;
+	text-align: left;
+	margin-top: 15px;
+	font-weight: 600;
+}
+
+.infra-points-banner img {
+	width: 20vw;
+}
+
+.infra-points-wrapper {
+	width: 80vw;
+	display: grid;
+	grid-template-columns: repeat(2, 300px);
+	grid-template-rows: repeat(3, 140px);
+	column-gap: 30px;
+	margin-top: 25px;
+	margin-left: 100px;
+	cursor: default;
+}
+
+.infra-points-cards {
+	width: 240px;
+	height: max-content;
+	border: 2px solid #b3b3b3;
+	text-align: left;
+	margin-left: 15px;
+	padding: 25px;
+	position: relative;
+	background-color: #fff;
+	font-weight: 600;
+	color: var(--text-color);
+}
+
+.infra-points-cards strong {
+	color: #000;
+	font-weight: bolder;
+}
+
+.infra-points-cards::before {
+	content: "";
+	border: 2px solid #cccccc;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 8px;
+	left: 10px;
+	z-index: -5;
+}
+
+.infra-faq {
+	margin-top: 10vh;
+	cursor: default;
+}
+
+.infra-faq-title {
+	margin-bottom: 5vh;
+}
+
+.infra-faq-title p {
+	color: var(--text-color);
+	margin: 0;
+	padding: 0;
+}
+
+.infra-faq-title h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.infra-questions-wrapper {
+	margin: 0;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.infra-questions-card {
+	color: var(--text-color);
+	border-bottom: 1px solid #b3b3b3;
+	width: 35vw;
+}
+
+.infra-questions-header {
+	display: flex;
+	justify-content: space-between;
+	cursor: default;
+}
+
+.infra-question {
+	font-weight: 900;
+}
+
+.infra-questions-arrow {
+	object-fit: contain;
+	cursor: pointer;
+}
+
+.infra-questions-awnswers {
+	display: none;
+}
+
+.--active-awnswer {
+	display: block;
+}
+
+.--active-arrow {
+	transform: rotate(180deg);
+}
+
+.infra-institutional {
+	margin-top: 25px;
+	margin-bottom: 30px;
+	color: var(--text-color);
+	cursor: default;
+}
+
+.infra-institutional a {
+	text-decoration: none;
+	font-weight: 900;
+	color: var(--text-color);
+}

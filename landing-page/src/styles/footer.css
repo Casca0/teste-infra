@@ -1,0 +1,49 @@
+.infra-footer {
+	position: sticky;
+	bottom: 0;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+}
+
+.infra-cookie {
+	background: #ebebeb;
+	text-align: left;
+	color: var(--text-color);
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 0 10px 0;
+	cursor: default;
+}
+
+.infra-cookie p {
+	margin: 10px 0 0 0;
+	padding: 10px;
+}
+
+#infra-cookie-accept {
+	border: none;
+	border-radius: 10px;
+	background-color: var(--highlight-color);
+	color: #fff;
+	cursor: pointer;
+	padding: 10px 40px 10px 40px;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+.--disabled {
+	display: none;
+}
+
+.infra-chat {
+	width: max-content;
+	text-align: right;
+	margin: 25px;
+	padding: 10px;
+	border-radius: 50px;
+	align-self: flex-end;
+	background-color: #fff;
+	box-shadow: 0 0 15px #c2c2c2;
+	cursor: pointer;
+}

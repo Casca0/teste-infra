@@ -1,0 +1,49 @@
+$main-color: #c7c7c7;
+$text-color: #5c5c5c;
+
+.infra-sidemenu {
+	&__wrapper {
+		border-right: 1px solid $main-color;
+		height: calc(100vh - 100px);
+		padding: 5px 45px 5px 15px;
+		margin-top: 15px;
+		min-width: 15vw;
+		max-width: 25vw;
+	}
+
+	&__header {
+		border-bottom: 1px solid $main-color;
+		width: 20vw;
+
+		h3 {
+			cursor: default;
+			color: $text-color;
+			padding: 0;
+			margin: 35px 0;
+		}
+	}
+
+	&__nav {
+		nav ul {
+			padding: 0;
+		}
+
+		nav ul li {
+			cursor: pointer;
+			margin: 20px 0;
+			list-style: none;
+			color: $text-color;
+
+			&:hover {
+				transition: 0.3s ease-in-out;
+				color: #000;
+				font-weight: bold;
+			}
+
+			&.active {
+				color: #000;
+				font-weight: bold;
+			}
+		}
+	}
+}

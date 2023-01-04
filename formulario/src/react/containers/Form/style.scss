@@ -1,0 +1,122 @@
+$main-color: #c7c7c7;
+$text-color: #5c5c5c;
+
+.infra-form {
+	&__wrapper {
+		margin-left: 50px;
+	}
+
+	&__header {
+		width: 100%;
+
+		h3 {
+			letter-spacing: 5px;
+			color: $text-color;
+
+			&:nth-child(3) {
+				margin-top: 55px;
+			}
+		}
+
+		p {
+			color: $text-color;
+		}
+	}
+
+	&__contacts {
+		p {
+			&#phone {
+				&::before {
+					content: '';
+					background-image: url('../../assets/call.svg');
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 23px;
+					padding: 10px;
+					margin-right: 10px;
+				}
+			}
+
+			&#email {
+				&::before {
+					content: '';
+					background-image: url('../../assets/mail.svg');
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: 23px;
+					padding: 10px;
+					margin-right: 10px;
+				}
+			}
+
+			strong {
+				color: #000;
+			}
+		}
+	}
+
+	&__main {
+		form {
+			border-top: 1px solid $main-color;
+			padding-top: 25px;
+			display: grid;
+			grid-template-columns: repeat(2, 500px);
+
+			#infra-form__email-box {
+				grid-column: 1 / span 2;
+
+				input {
+					width: 90%;
+				}
+			}
+
+			#infra-form__optionbox {
+				grid-column: 1 / span 2;
+
+				select {
+					width: 40%;
+					height: 50%;
+					margin-bottom: 45px;
+					color: $text-color;
+					padding-left: 15px;
+				}
+			}
+
+			#infra-form__messagebox {
+				grid-column: 1 / span 2;
+
+				textarea {
+					resize: none;
+					outline: none;
+					width: 95%;
+					margin-bottom: 20px;
+				}
+			}
+
+			input,
+			label {
+				display: block;
+			}
+
+			input {
+				width: 90%;
+				height: 3vh;
+				margin-bottom: 20px;
+			}
+
+			label {
+				margin-bottom: 10px;
+				color: $text-color;
+				font-size: 14px;
+			}
+
+			button {
+				background-color: #000;
+				color: #fff;
+				width: 10vw;
+				height: 5vh;
+				cursor: pointer;
+			}
+		}
+	}
+}
